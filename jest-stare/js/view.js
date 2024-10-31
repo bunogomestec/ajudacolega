@@ -30741,11 +30741,9 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         i > 1 &&
                           toSelector(
                             // If the preceding token was a descendant combinator, insert an implicit any-element `*`
-                            tokens
-                              .slice(0, i - 1)
-                              .concat({
-                                value: tokens[i - 2].type === " " ? "*" : "",
-                              }),
+                            tokens.slice(0, i - 1).concat({
+                              value: tokens[i - 2].type === " " ? "*" : "",
+                            }),
                           ).replace(rtrimCSS, "$1"),
                         matcher,
                         i < j && matcherFromTokens(tokens.slice(i, j)),

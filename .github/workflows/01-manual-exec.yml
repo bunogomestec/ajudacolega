@@ -5,37 +5,33 @@ on:
 
 jobs:
   e2e-tests:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
-    steps: 
+    steps:
       - name: Checkout do código
         uses: actions/checkout@v4
 
       - name: Listar diretórios principais
-        run: ls -R  # Isso vai ajudar a identificar onde estão os diretórios
+        run: ls -R # Isso vai ajudar a identificar onde estão os diretórios
 
       - name: Instalando Yarn
         run: npm install -g yarn
 
       - name: Instalando dependências
-        run: yarn  
+        run: yarn
 
       - name: Instalando TypeScript
         run: |
-          cd trabalho-entregue || exit 1
           yarn global add typescript
 
       - name: Instalando dependências do backend
         run: |
-          cd crud_clientes_node-main/backend || exit 1
           yarn add express swagger-jsdoc swagger-ui-express
 
       - name: Levantar o servidor em background
         run: |
-          cd crud_clientes_node-main/backend || exit 1
           node app.js &
 
-      - name: Testes E2E (end-to-end) 
+      - name: Testes E2E (end-to-end)
         run: |
-          cd test/users || exit 1
           yarn run e2e
