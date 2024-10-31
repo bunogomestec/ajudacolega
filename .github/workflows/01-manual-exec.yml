@@ -37,5 +37,5 @@ jobs:
 
       - name: Testes E2E (end-to-end) 
         run: |
-          cd trabalho-entregue || exit 1
+          cd test/users || exit 1
           yarn run e2e
