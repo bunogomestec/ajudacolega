@@ -11,7 +11,7 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Listar diretórios
+      - name: Listar diretórios principais
         run: ls -R  # Isso vai ajudar a identificar onde estão os diretórios
 
       - name: Instalando Yarn
