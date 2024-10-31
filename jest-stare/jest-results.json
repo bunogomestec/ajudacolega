@@ -125,9 +125,7 @@
       "testFilePath": "C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\test-users.test.js",
       "testResults": [
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 82,
           "failureDetails": [
             {
@@ -146,9 +144,7 @@
           "title": "Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma."
         },
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 7,
           "failureDetails": [
             {
@@ -167,9 +163,7 @@
           "title": "Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados."
         },
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 10,
           "failureDetails": [
             {
@@ -188,9 +182,7 @@
           "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
         },
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 4,
           "failureDetails": [
             {
@@ -237,9 +229,7 @@
       "testFilePath": "C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\teste-env-separado.test.js",
       "testResults": [
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 80,
           "failureDetails": [
             {
@@ -258,9 +248,7 @@
           "title": "Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma."
         },
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 5,
           "failureDetails": [
             {
@@ -279,9 +267,7 @@
           "title": "Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados."
         },
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 8,
           "failureDetails": [
             {
@@ -300,9 +286,7 @@
           "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
         },
         {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
+          "ancestorTitles": ["Suite de testes crud (post, get, put, delete)"],
           "duration": 4,
           "failureDetails": [
             {
