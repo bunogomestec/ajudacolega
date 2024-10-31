@@ -46,6 +46,6 @@ jobs:
         working-directory: ./crud_clientes_node-main/backend
         run: node app.js &
 
-      - name: Testes E2E
+      - name: Testes E2E(Teste)
         working-directory: trabalho-entregue
         run: yarn run e2e
