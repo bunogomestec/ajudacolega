@@ -18,29 +18,17 @@ jobs:
         run: npm install -g yarn
 
       - name: Instalando dependências
-        run: |
-          cd trabalho-entregue || exit 1
-          yarn  
+        run: yarn  
 
       - name: Instalando TypeScript
         run: |
           cd trabalho-entregue || exit 1
           yarn global add typescript
 
-      - name: Instalando Express
+      - name: Instalando dependências do backend
         run: |
           cd crud_clientes_node-main/backend || exit 1
-          yarn add express 
-
-      - name: Instalando swagger-jsdoc
-        run: |
-          cd crud_clientes_node-main/backend || exit 1
-          yarn add swagger-jsdoc   
-
-      - name: Instalando swagger-ui-express
-        run: |
-          cd crud_clientes_node-main/backend || exit 1
-          yarn add swagger-ui-express    
+          yarn add express swagger-jsdoc swagger-ui-express
 
       - name: Levantar o servidor em background
         run: |
