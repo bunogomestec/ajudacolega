@@ -1,0 +1,2 @@
+# ajudacolega
+para ajudar colega
