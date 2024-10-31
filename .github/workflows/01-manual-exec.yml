@@ -11,14 +11,14 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Listar diretório raiz
+      - name: Listar diretórios
         run: ls -R
 
       - name: Instalando Yarn
         run: npm install -g yarn
 
       - name: Instalando dependências
-        working-directory: ./trabalho-entregue
+        working-directory: ./trabalho-entregue  # Certifique-se que este caminho está correto
         run: yarn  
 
       - name: Instalando TypeScript
