@@ -1,10 +1,10 @@
 {
-  "numFailedTestSuites": 0,
-  "numFailedTests": 0,
-  "numPassedTestSuites": 3,
-  "numPassedTests": 9,
+  "numFailedTestSuites": 3,
+  "numFailedTests": 10,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 0,
   "numPendingTestSuites": 0,
-  "numPendingTests": 1,
+  "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
   "numTotalTestSuites": 3,
@@ -26,21 +26,21 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1719080424510,
+  "startTime": 1730255389736,
   "success": false,
   "testResults": [
     {
       "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 1,
-      "numPendingTests": 1,
+      "numFailingTests": 2,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1719080428501,
-        "runtime": 3518,
-        "slow": false,
-        "start": 1719080424983
+        "end": 1730255401422,
+        "runtime": 11196,
+        "slow": true,
+        "start": 1730255390226
       },
       "skipped": false,
       "snapshot": {
@@ -52,53 +52,177 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "/Users/taynaraluana/Downloads/primeiro-test/test/teste-integrado-users.test.js",
+      "testFilePath": "C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\teste-integrado-users.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete USER)"
+          ],
+          "duration": 18,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete USER) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete USER)"
+          ],
+          "duration": 0,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete USER) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete USER) › Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete USER) › Deverá remover o registro cadastrado anteriormente. E retornar 204.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n"
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 4,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1730255401435,
+        "runtime": 11198,
+        "slow": true,
+        "start": 1730255390237
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\test-users.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete)"
           ],
-          "duration": 8,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 82,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete) Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete)"
+          ],
+          "duration": 7,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete) Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete)"
+          ],
+          "duration": 10,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
           "fullName": "Suite de testes crud (post, get, put, delete) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 9,
+          "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
         },
         {
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete)"
           ],
-          "duration": null,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 4,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
           "fullName": "Suite de testes crud (post, get, put, delete) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "pending",
+          "status": "failed",
           "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
         }
       ],
-      "failureMessage": null
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Deverá remover o registro cadastrado anteriormente. E retornar 204.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n"
     },
     {
       "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 4,
+      "numFailingTests": 4,
+      "numPassingTests": 0,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1719080428512,
-        "runtime": 3533,
-        "slow": false,
-        "start": 1719080424979
+        "end": 1730255401454,
+        "runtime": 11238,
+        "slow": true,
+        "start": 1730255390216
       },
       "skipped": false,
       "snapshot": {
@@ -110,21 +234,27 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "/Users/taynaraluana/Downloads/primeiro-test/test/test-users.test.js",
+      "testFilePath": "C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\teste-env-separado.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete)"
           ],
-          "duration": 30,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 80,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
           "fullName": "Suite de testes crud (post, get, put, delete) Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
+          "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma."
         },
         {
@@ -132,102 +262,20 @@
             "Suite de testes crud (post, get, put, delete)"
           ],
           "duration": 5,
-          "failureDetails": [],
-          "failureMessages": [],
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
           "fullName": "Suite de testes crud (post, get, put, delete) Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 2,
+          "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
-          "title": "Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
-          "duration": 7,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes crud (post, get, put, delete) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 7,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
-          "duration": 10,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes crud (post, get, put, delete) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 3,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
-        }
-      ],
-      "failureMessage": null
-    },
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 4,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1719080428518,
-        "runtime": 3539,
-        "slow": false,
-        "start": 1719080424979
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "/Users/taynaraluana/Downloads/primeiro-test/test/teste-env-separado.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
-          "duration": 26,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes crud (post, get, put, delete) Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete)"
-          ],
-          "duration": 4,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes crud (post, get, put, delete) Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 2,
-          "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados."
         },
         {
@@ -235,33 +283,45 @@
             "Suite de testes crud (post, get, put, delete)"
           ],
           "duration": 8,
-          "failureDetails": [],
-          "failureMessages": [],
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
           "fullName": "Suite de testes crud (post, get, put, delete) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 7,
+          "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
         },
         {
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete)"
           ],
-          "duration": 16,
-          "failureDetails": [],
-          "failureMessages": [],
+          "duration": 4,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
           "fullName": "Suite de testes crud (post, get, put, delete) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 3,
+          "numPassingAsserts": 0,
           "retryReasons": [],
-          "status": "passed",
+          "status": "failed",
           "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
         }
       ],
-      "failureMessage": null
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Deverá remover o registro cadastrado anteriormente. E retornar 204.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n"
     }
   ],
   "wasInterrupted": false
