@@ -1,6 +1,6 @@
 {
-  "numFailedTestSuites": 2,
-  "numFailedTests": 6,
+  "numFailedTestSuites": 3,
+  "numFailedTests": 10,
   "numPassedTestSuites": 0,
   "numPassedTests": 0,
   "numPendingTestSuites": 0,
@@ -8,7 +8,7 @@
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
   "numTotalTestSuites": 3,
-  "numTotalTests": 6,
+  "numTotalTests": 10,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -209,14 +209,119 @@
           "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
         }
       ],
-      "console": [
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete USER) › Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete USER) › Deverá remover o registro cadastrado anteriormente. E retornar 204.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n"
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 4,
+      "numPassingTests": 0,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1730391243569,
+        "runtime": 74539,
+        "slow": true,
+        "start": 1730391169030
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\teste-env-separado.test.js",
+      "testResults": [
         {
-          "message": "[@faker-js/faker]: faker.phone.number(format) is deprecated since v8.1 and will be removed in v9.0. Please use faker.phone.number(), faker.string.numeric() or faker.helpers.fromRegExp() instead.",
-          "origin": "    at f (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\@faker-js\\faker\\dist\\cjs\\internal\\deprecated.js:1:801)\n    at g.number (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\@faker-js\\faker\\dist\\cjs\\modules\\phone\\index.js:1:760)\n    at Object.number (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\test\\users\\teste-integrado-users.test.js:12:29)\n    at Promise.then.completed (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusHook (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\run.js:281:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTestsForDescribeBlock (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\run.js:95:7)\n    at _runTestsForDescribeBlock (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\POS\\Testes_API\\back_inicio\\jest-test-automatizado-api-rest\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
-          "type": "warn"
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete)"
+          ],
+          "duration": 84,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete) Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete)"
+          ],
+          "duration": 9,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete) Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete)"
+          ],
+          "duration": 14,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete)"
+          ],
+          "duration": 7,
+          "failureDetails": [
+            {
+              "code": "ECONNREFUSED"
+            }
+          ],
+          "failureMessages": [
+            "AggregateError: \n    at internalConnectMultiple (node:net:1116:18)\n    at afterConnectMultiple (node:net:1683:7)"
+          ],
+          "fullName": "Suite de testes crud (post, get, put, delete) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
         }
       ],
-      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete USER) › Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete USER) › Deverá remover o registro cadastrado anteriormente. E retornar 204.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n"
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Ausencia de campo email, deverá gerar o status code 422 e emitir uma mensagem de erro validando a mesma.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Cadastrando um usuário, e consultando o retorno dos campos, se foram os enviados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes crud (post, get, put, delete) › Deverá remover o registro cadastrado anteriormente. E retornar 204.\u001b[39m\u001b[22m\n\n    AggregateError:\n\u001b[2m\u001b[22m\n\u001b[2m\u001b[22m\n"
     }
   ],
   "wasInterrupted": false
